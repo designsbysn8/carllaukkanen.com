@@ -1,27 +1,110 @@
 html, body {
-  font-family: IBM Plex Sans;
+  font-family: Karla;
   height: 100%;
-  background: aliceblue;
-  font-weight: 100;
+  /* background: aliceblue; */
+  /* background-image: linear-gradient(to right, aliceblue , lightblue); */
 }
 
-h1 {
-  margin-top: 2em;
-  color: cornflowerblue;
+.container, .row {
+  height: 100%;
 }
 
-.link {
-  font-size: 1.5rem;
-  padding: 1em;
+a {
+  color: lightblue;
 }
 
-.link > a:hover {
+a:hover {
   color: hotpink;
   text-decoration: none;
 }
 
-img {
-  border-radius: 500px;
+/* Homepage stuff */
+
+.carl-home {
   width: 100%;
-  margin: 2em 0;
+  height: 100%;
+  background-image: url('./img/carl.jpg');
+  background-position: center;
+  background-size: cover;
 }
+
+.link {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.link-composer {
+  justify-content: flex-end;
+}
+
+.link > a {
+  margin: 3em 0;
+}
+
+/* composer page stuff */
+
+.carl-composer {
+  width: 100%;
+  height: 100%;
+  background: aliceblue;
+}
+
+.bio {
+  padding-top: 1em;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.music-links {
+  font-size: 1.5rem;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.music-links > a {
+  margin-bottom: 30px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Homepage stuff */
+
+  .carl-home {
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/carl.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .link {
+    flex-direction: column;
+  }
+
+  .link-composer {
+    justify-content: center;
+  }
+
+  .link > a {
+    margin: auto;
+  }
+
+  /* composer page stuff */
+
+  .bio {
+    font-size: 0.93rem;
+    line-height: 1.7rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
