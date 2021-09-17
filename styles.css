@@ -71,7 +71,7 @@ a:hover {
 
 .music-links {
   font-size: 1.5rem;
-  padding: 1em;
+  padding-bottom: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,8 +79,17 @@ a:hover {
   margin-top: 30px;
 }
 
-.music-links > a {
+.music-link-wrapper {
+  margin-bottom: 10px;
+}
+
+.music-link {
   margin-bottom: 30px;
+}
+
+.subtext {
+  font-size: 15px;
+  margin-top: -5px;
 }
 
 /* Medium devices (tablets, 768px and up) */
